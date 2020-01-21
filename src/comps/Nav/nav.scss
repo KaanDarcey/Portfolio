@@ -1,0 +1,40 @@
+@import '../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
+.navbar {
+    width:100%;
+    flex:1;
+    height:30vh;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+
+    background-color:$primaryColor;
+}
+
+.navItem {
+    border: 1px black solid;
+    flex:1;
+    height:100%;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    
+    font-family: $primaryFont;
+    color:$backgroundColor;
+    font-size: 16pt;
+    font-weight: bold;
+
+    &:active, &:hover {
+        background-color: $SecondaryColor;
+    }
+}
