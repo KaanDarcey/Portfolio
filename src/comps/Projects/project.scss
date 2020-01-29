@@ -1,0 +1,34 @@
+@import '../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
+.project {
+    width:100%;
+    height:90vh;
+    flex:2;
+    background-color: $secondaryColor;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: $primaryFont;
+
+    .projectTitle {
+        text-shadow: 2px 2px $backgroundColor;
+    }
+
+    .itemContainer {
+        @include flex($dir:'row');
+        justify-content: space-between;
+        align-items: center;
+    }
+}

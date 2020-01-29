@@ -1,0 +1,11 @@
+@import '../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
