@@ -1,0 +1,41 @@
+@import '../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
+.about {
+    width:100%;
+    height:90vh;
+    background-color: $backgroundColor;
+    padding: 10px;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: $primaryFont;
+}
+
+.bio, .skills {
+    text-shadow: 2px 2px $secondaryColor;
+}
+
+.skillLists {
+    @include flex();
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+}
+
+.bioDescr, .skillItems {
+    text-shadow: none;
+    width:600px;
+}
