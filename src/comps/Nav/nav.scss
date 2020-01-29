@@ -12,29 +12,45 @@
 .navbar {
     width:100%;
     flex:1;
-    height:30vh;
+    height:10vh;
+
+    position: fixed;
+    top:0;
+
     @include flex();
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 75px;
 
     background-color:$primaryColor;
 }
 
 .navItem {
-    border: 1px black solid;
-    flex:1;
+    // border: 1px black solid;
+    width:100px;
     height:100%;
 
     @include flex();
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
     
     font-family: $primaryFont;
     color:$backgroundColor;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: bold;
 
-    &:active, &:hover {
-        background-color: $SecondaryColor;
-    }
+    // &:active, &:hover {
+    //     border-bottom: 5px solid $secondaryColor;
+    //     transition:0.5s;
+    // }
+}
+
+.actionBar {
+    width:0% ;
+    height:10px;
+    position: absolute;
+    bottom:0;
+    background-color: $secondaryColor;
 }
