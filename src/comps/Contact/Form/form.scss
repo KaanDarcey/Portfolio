@@ -1,0 +1,52 @@
+@import '../../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
+form {
+    width:600px;
+    font-family: $primaryFont;
+}
+.form-input {
+    width:100%;
+    height:30px;
+    font-size: 12pt;
+    padding:5px;
+}
+
+form h3 {
+    color:white;
+}
+
+.form-input-msg {
+    height:200px;
+    resize:none;
+}
+
+.form-btn {
+    width: 120px;
+    height:40px;
+    background-color: #119da4;
+    border: none;
+    color:$backgroundColor;
+    margin-top:20px;
+    font-weight: bold;
+
+    font-family: $primaryFont;
+    font-size: 11pt;
+
+
+    &:hover, &:active {
+        background-color: $backgroundColor;
+        color:#119da4;
+        box-shadow: 1px 1px black;
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+}
