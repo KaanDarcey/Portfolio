@@ -12,7 +12,7 @@
 .hero {
     width:100%;
     flex:3;
-    height:90vh;
+    height:95vh;
     padding-top: 45px;
     @include flex();
     justify-content: space-between;
@@ -20,16 +20,19 @@
     overflow: hidden;
 
     background-color: $backgroundColor;
+    overflow: hidden;
 }
 
 .heroText {
     margin-left: 75px;
     padding-bottom: 100px;
+    z-index: 100;
+    z-index: 1;
 
     .heroTitle {
         font-family: $primaryFont;
-        font-size: 42pt;
-        color:$secondaryColor;
+        font-size: 55pt;
+        color:#119da4;
         margin: 5px;
     }
 
@@ -44,18 +47,21 @@
 .heroImg {
     width:900px;
     height:100%;
+    margin-top: 30px;
     padding-top: 85px;
+    z-index: 2;
 }
 
 .btn {
     width:150px;
     height:50px;
-    background-color: $secondaryColor;
+    background-color: #119da4;
     border:0;
     border-radius: 3px;
+    z-index: 100;
 
-    margin-top: 10px;
-    margin-right:10px;
+    margin-top: 30px;
+    margin-right:20px;
 
     font-family: $primaryFont;
     font-size: 14pt;
