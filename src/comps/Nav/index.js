@@ -1,16 +1,29 @@
 import React from 'react';
 import './nav.scss';
+import animateScrollTo from 'animated-scroll-to';
 
 function Nav({title1, title2, title3}){
     return(
     <div className='navbar'>
-        <div  className='navItem'>{title1}
+        <div  
+            className='navItem'
+            onClick={()=>{animateScrollTo(document.querySelector('.project'));}}
+        >
+            {title1}
             <div className='actionBar'></div>
         </div>
-        <div className='navItem'>{title2}
+        <div 
+            className='navItem'
+            onClick={()=>{animateScrollTo(document.querySelector('.about'));}}
+        >
+            {title2}
             <div className='actionBar'></div>
         </div>
-        <div className='navItem'>{title3}
+        <div 
+            className='navItem'
+            onClick={()=>{animateScrollTo(document.querySelector('.contact'));}}
+        >
+            {title3}
             <div className='actionBar'></div>
         </div>
     </div>

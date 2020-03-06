@@ -1,5 +1,6 @@
 import React from 'react';
 import './hero.scss';
+import animateScrollTo from 'animated-scroll-to';
 
 function Hero({title1, title2, title3}){
     return(
@@ -8,8 +9,18 @@ function Hero({title1, title2, title3}){
                 {/* <h1 className='heroTitle' >{title1},</h1> */}
                 <h1 className='heroTitle'>{title2}</h1>
                 <h3 className='heroSubTitle'>{title3}</h3>
-                <button className='btn'>View Projects</button>
-                <button className='btn'>Contact Me</button>
+                <button 
+                    className='btn'
+                    onClick={()=>{animateScrollTo(document.querySelector('.project'));}}
+                >
+                        View Projects
+                </button>
+                <button 
+                    className='btn'
+                    onClick={()=>{animateScrollTo(document.querySelector('.contact'));}}
+                >
+                    Contact Me
+                </button>
             </div>
             <img className='heroImg' src={require('../../imgs/Hero.png')} alt='heroImg'/>
         </div>
