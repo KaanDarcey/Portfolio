@@ -43,10 +43,11 @@
     font-size: 12pt;
     font-weight: bold;
 
-    // &:active, &:hover {
-    //     border-bottom: 5px solid $secondaryColor;
-    //     transition:0.5s;
-    // }
+    &:active, &:hover {
+        border-bottom: 10px solid white;
+        overflow: hidden;
+        transition:0.5s;
+    }
 }
 
 .actionBar {
