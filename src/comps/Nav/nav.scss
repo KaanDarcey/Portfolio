@@ -16,13 +16,15 @@
 
     position: fixed;
     top:0;
+    z-index: 100;
 
     @include flex();
     justify-content: left;
     align-items: center;
     padding-left: 75px;
 
-    background-color:$primaryColor;
+    background-color:#333745;
+    // background: linear-gradient(180deg, rgba(42,98,143,1) 0%, rgba(62,146,204,1) 100%); 
 }
 
 .navItem {
@@ -37,7 +39,7 @@
     position: relative;
     
     font-family: $primaryFont;
-    color:$backgroundColor;
+    color:white;
     font-size: 12pt;
     font-weight: bold;
 
