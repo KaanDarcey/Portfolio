@@ -1,0 +1,131 @@
+@import '../../Style/style.scss';
+
+/* ========== MIXINS ========== */
+
+@mixin flex($dir:'column'){
+    display: flex;
+    flex-direction: $dir;
+}
+
+/* ========== CLASS SPECIFIC ========== */
+
+.PP-container {
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    background-color: $backgroundColor;
+    z-index: 100;
+    overflow: scroll;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PP-header {
+    width:100%;
+    height:100px;
+    background-color: #333745;
+    position: absolute;
+    top:0;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color:$backgroundColor;
+
+    .PP-close {
+        position: absolute;
+        left:50px;
+
+        &:hover, &:active {
+            transform: scale(1.08);
+        }
+    }
+}
+
+.PP-page {
+    width:100%;
+    height:100%;
+    position: relative;
+    top:150px;
+    @include flex();
+    align-items: center;
+    flex-direction: column;
+}
+
+.PP-section {
+    @include flex();
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width:1000px;
+}
+
+.PP-section-descr {
+    width:500px;
+    height:500px;
+    padding:20px;
+}
+
+.PP-section-descr-top{
+    border: 2px $primaryColor solid;
+    width:400px;
+    height:400px;
+    @include flex();
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.PP-section-top {
+    // width:100%;
+    height:80%;
+    @include flex();
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.PP-section-skills {
+    margin-top: 10px;
+
+    li {
+        margin:10px;
+    }
+}
+
+.PP-icons {
+    height:80%;
+    @include flex();
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.PP-icon {
+    @include flex();
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#333745;
+
+    &:hover, &:active {
+        color:#119da4;
+    }
+}
+
+
+.PP-section-header {
+    color:#119da4;
+    font-size: 18pt;
+}
+
+.PP-img {
+    width:440px;
+    height:440px;
+    border:1px $primaryColor solid;
+    margin:10px;
+}

@@ -1,11 +1,44 @@
-@import '../Style/style.scss';
-
-/* ========== MIXINS ========== */
-
-@mixin flex($dir:'column'){
-    display: flex;
-    flex-direction: $dir;
-}
+@import '../../Style/style.scss';
 
 /* ========== CLASS SPECIFIC ========== */
 
+.slider {
+    width:400px;
+    height:30px;
+    background-color:$backgroundColor;
+    border:3px solid $backgroundColor;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 3px 3px $primaryColor;
+
+    .sliderOption1 {
+        background-color: #119da4;
+        color:$backgroundColor;
+    }
+
+    .sliderOption2 {
+        color:$primaryColor;
+        opacity: 0.3;
+    }
+
+    .sliderOption1, .sliderOption2{
+        width:50%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover, &:active {
+            background-color: #119da4;
+            color:$backgroundColor;
+            opacity: 1;
+        }
+    }
+
+    h3 {
+        margin:0px;
+        padding:0px;
+    }
+}
