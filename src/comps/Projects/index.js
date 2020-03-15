@@ -3,7 +3,7 @@ import './project.scss';
 import ProjectItem from './ProjectItem';
 import Slider from './Slider';
 
-function Project({setShowProject={setShowProject}}){
+function Project({setShowProject={setShowProject}, setPickProject={setPickProject}}){
 
     const [changeProjects, setChangeProjects] = useState(false);
 
@@ -50,6 +50,7 @@ function Project({setShowProject={setShowProject}}){
         git3='https://github.com/KaanDarcey/PokemonTCG';
         descr3 ='Pokemon TCG is an interactive game where you go out and collect Pokemon cards.';
         tools3='HTML, CSS, JavaScript';
+
     } else {
         linkType = 'Behance';
 
@@ -80,9 +81,9 @@ function Project({setShowProject={setShowProject}}){
             <h2 className='projectTitle'>PROJECTS</h2>
             <Slider setChangeProjects={setChangeProjects}/>
             <div className='itemContainer'>
-                <ProjectItem type={linkType} setShowProject={setShowProject} image={img1} projectName={pname1} projectRole={prole1} git={git1} descr={descr1} tools={tools1}/>
-                <ProjectItem type={linkType} setShowProject={setShowProject} image={img2} projectName={pname2} projectRole={prole2} git={git2} descr={descr2} tools={tools2}/>
-                <ProjectItem type={linkType} setShowProject={setShowProject} image={img3} projectName={pname3} projectRole={prole3} git={git3} descr={descr3} tools={tools3}/>
+                <ProjectItem setPickProject={setPickProject} type={linkType} setShowProject={setShowProject} image={img1} projectName={pname1} projectRole={prole1} git={git1} descr={descr1} tools={tools1}/>
+                <ProjectItem setPickProject={setPickProject} type={linkType} setShowProject={setShowProject} image={img2} projectName={pname2} projectRole={prole2} git={git2} descr={descr2} tools={tools2}/>
+                <ProjectItem setPickProject={setPickProject} type={linkType} setShowProject={setShowProject} image={img3} projectName={pname3} projectRole={prole3} git={git3} descr={descr3} tools={tools3}/>
             </div>
         </div>
     )

@@ -41,28 +41,28 @@ function ProjectPage({title, role,  skills, descr, imgs, setShowProject={setShow
                                 </a>
                             </div>
                     </div>
-                    <img className='PP-img' src={imgs[0]} />
+                    <img className='PP-img' src={require('../../../imgs/projects/'+imgs[0]+'.png')} />
                 </div>
                 <div className='PP-section'>
                     <div className='PP-section-descr'>
                         <h3 className='PP-section-header'>About</h3>
                         <p className='PP-section-text'>{descr[0]}</p>
                     </div>
-                    <img className='PP-img' src={imgs[0]}/>
+                    <img className='PP-img' src={require('../../../imgs/projects/'+imgs[1]+'.png')}/>
                 </div>
                 <div className='PP-section'>
                     <div className='PP-section-descr'>
                         <h3 className='PP-section-header'>Design</h3>
                         <p className='PP-section-text'>{descr[1]}</p>
                     </div>
-                    <img className='PP-img' src={imgs[1]}/>
+                    <img className='PP-img' src={require('../../../imgs/projects/'+imgs[2]+'.png')}/>
                 </div>
                 <div className='PP-section'>
                     <div className='PP-section-descr'>
                         <h3 className='PP-section-header'>Development</h3>
                         <p className='PP-section-text'>{descr[2]}</p>
                     </div>
-                    <img className='PP-img' src={imgs[2]}/>
+                    <img className='PP-img' src={require('../../../imgs/projects/'+imgs[3]+'.png')}/>
                 </div>
                 <div className='PP-up'></div>
             </div>
