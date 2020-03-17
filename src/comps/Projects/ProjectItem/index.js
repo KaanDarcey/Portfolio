@@ -31,7 +31,9 @@ function ProjectItem({type, image, projectName, projectRole, git, descr, tools, 
             <h3 className='projectRole'>{projectRole}</h3>
             <h4 className='projectTools'>Tools Used<br/><span className='tools'>{tools}</span></h4>
             <h3 className='github'>{type}</h3>
-            <a href={git} className='githubLink'>{git}</a>
+            <div className='link-container'>
+                <a href={git} className='githubLink'>{git}</a>
+            </div>
             <h3 className='github'>Description</h3>
             <p className='projectDescr'>{descr}</p>
             <h5 onClick={()=>{setShowProject(true); setPickProject(projectDisp);}}>Read More</h5>

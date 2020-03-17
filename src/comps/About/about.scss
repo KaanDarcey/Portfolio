@@ -49,3 +49,112 @@
     width:600px;
     height:500px;
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .about {
+        width: 100%;
+        height:100%;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0px;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+    }
+
+
+    .vector {
+        width: 400px;
+        height:350px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .about {
+        width: 100%;
+        height:100%;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+    }
+
+    .vector {
+        position: absolute;
+        z-index: 0;
+        opacity: 0.2;
+        right:20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .about {
+        width: 100%;
+        height:100%;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+    }
+
+    .bio {
+        width: 100%;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bioDescr, .skillItems {
+        width:330px;
+    }
+
+    .vector {
+        position: absolute;
+        z-index: 0;
+        opacity: 0.2;
+        right:20px;
+    }
+
+    .skills {
+        width:100%;
+        @include flex();
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skillLists {
+        @include flex();
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:330px;
+
+        ul {
+            list-style: none;
+        }
+
+        .skillItems {
+            padding-left: 0px;
+        }
+
+    }
+}

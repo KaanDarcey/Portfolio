@@ -50,3 +50,17 @@ form h3 {
         transition: 0.3s;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    form {
+        width:400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    form {
+        width:300px;
+    }
+}

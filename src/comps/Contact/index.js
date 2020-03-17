@@ -13,19 +13,19 @@ function Contact(){
                     <a href='https://github.com/KaanDarcey'>
                         <div className='contact-icon'>
                             <FaGithubAlt size={60}/>
-                            <h4 className='icon-text'>View My Github</h4>
+                            <h4 className='icon-text'>Github</h4>
                         </div>
                     </a>
                     <a href='https://www.behance.net/kaandarcey'>
                         <div className='contact-icon'>
                             <FaBehanceSquare size={60}/>
-                            <h4 className='icon-text'>View My Behance</h4>
+                            <h4 className='icon-text'>Behance</h4>
                         </div>
                     </a>
                     <a href='https://www.linkedin.com/in/kaan-darcey/'>
                         <div className='contact-icon'>
                             <FaLinkedin size={60}/>
-                            <h4 className='icon-text'>View My LinkedIn</h4>
+                            <h4 className='icon-text'>LinkedIn</h4>
                         </div>
                     </a>
                 </div>

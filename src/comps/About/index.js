@@ -40,7 +40,7 @@ I have also worked through the design process which involved User Research (incl
                             <li>PHP</li>
                             <li>MySQL</li>
                             <li>Github</li>
-                            <li>SEO Principles</li>
+                            <li>SEO </li>
                         </ul>
                     </div>
                 </div>

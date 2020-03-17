@@ -5,12 +5,12 @@ function Form(){
     return(
         <form>
             <h3>Name</h3>
-            <input className='form-input' type='text' placeholder='Name' required='required' pattern='[a-zA-Z]'/>
+            <input className='form-input' type='text' placeholder='Name' required='required'/>
             <h3>Email</h3>
-            <input className='form-input' type='text' placeholder='Email' required='required' pattern='[a-zA-Z0-9]'/>
+            <input className='form-input' type='email' placeholder='Email' required='required'/>
             <h3>Message</h3>
-            <textarea className='form-input form-input-msg' type='text' placeholder='Message' required='required' pattern='[a-zA-Z0-9]'/>
-            <button className='form-btn'>Submit</button>
+            <textarea className='form-input form-input-msg' type='text' placeholder='Message' required='required'/>
+            <button type='submit' className='form-btn'>Submit</button>
         </form>
     )
 }

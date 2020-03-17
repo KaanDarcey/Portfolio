@@ -50,10 +50,25 @@
     }
 }
 
-.actionBar {
-    width:0% ;
-    height:10px;
-    position: absolute;
-    bottom:0;
-    background-color: $secondaryColor;
+//Tablet Screen 
+@media only screen and (max-width: 800px) {
+
+    .navbar {
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+}
+
+//Mobile Screen
+@media only screen and (max-width: 500px) {
+
+    .navbar {
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
 }
